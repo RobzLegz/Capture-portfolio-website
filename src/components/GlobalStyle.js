@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         background: #1b1b1b;
+        font-family: 'Inter', sans-serif;
     }
     button{
         font-weight: bold;
@@ -22,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
             background-color: #23d997;
             color: #fff;
         }
+        font-family: 'Inter', sans-serif;
     }
     h2{
         font-weight: lighter;
