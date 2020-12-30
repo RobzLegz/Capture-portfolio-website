@@ -2,6 +2,7 @@ import React from 'react';
 import home1 from "../img/home1.png";
 import {motion} from "framer-motion";
 import { About, Description, Image, Hide } from "../styles";
+import {titleAnim, fade, photoAnim} from "../animation";
 
 function AboutSection() {
 
@@ -12,24 +13,24 @@ function AboutSection() {
             <Description className="description">
                 <motion.div>
                     <Hide className="hide">
-                        <motion.h2>
+                        <motion.h2 variants={titleAnim}>
                             We work to make
                         </motion.h2>
                     </Hide>
                     <Hide className="hide">
-                        <motion.h2>your <span>dreams</span> come</motion.h2>
+                        <motion.h2 variants={titleAnim}>your <span>dreams</span> come</motion.h2>
                     </Hide>
                     <Hide className="hide">
-                        <motion.h2>true.</motion.h2>
+                        <motion.h2 variants={titleAnim}>true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>
+                <motion.p variants={fade}>
                     Contact us for any photography or videography ideas that you have. We have professionals with amazing skills.
-                </p>
-                <button>Contact us</button>
+                </motion.p>
+                <motion.button variants={fade}>Contact us</motion.button>
             </Description>
             <Image className="image">
-                <img src={home1} alt="guy with a camera"/>
+                <motion.img variants={photoAnim} src={home1} alt="guy with a camera"/>
             </Image>
         </About>
     );

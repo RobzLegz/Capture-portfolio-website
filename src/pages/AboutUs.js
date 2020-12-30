@@ -7,7 +7,7 @@ import {pageAnimation} from "../animation";
 
 function AboutUs() {
     return (
-        <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background:"fff"}}>
+        <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
             <AboutSection />
             <ServicesSection />
             <FaqSection />
