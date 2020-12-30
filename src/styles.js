@@ -15,6 +15,7 @@ export const Description = styled.div`
     h2{
         font-weight: lighter;
     }
+    z-index:2;
 `;
 export const Image = styled.div`
     flex:1;
@@ -24,6 +25,7 @@ export const Image = styled.div`
         height: 80vh;
         object-fit: cover;
     }
+    z-index:2;
 `;
 export const Hide = styled.div`
     overflow: hidden;
