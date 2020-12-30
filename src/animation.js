@@ -7,14 +7,13 @@ export const pageAnimation = {
         opacity:1,
         y:0,
         transition: {
-            duration: 0.7,
+            duration: 0.5,
             when: "beforeChildren",
-            staggerChildren: 0.3,
+            staggerChildren: 0.25,
         },
     },
     exit:{
         opacity:0,
-        y: 300,
         transition: {
             duration: 0.5,
         }
@@ -45,6 +44,7 @@ export const photoAnim = {
         transition:{
             ease: "easeOut",
             duration:0.7,
+            delay: 1.3,
         },
     },
 };
@@ -69,7 +69,7 @@ export const slider ={
 export const sliderContainer ={
     hidden: {opacity:1},
     show: {
-        opacity:1 , transition:{staggerChildren:0.1, ease:"easeOut"},
+        opacity:1 , transition:{staggerChildren:0.05, ease:"easeOut"},
     },
 };
 
