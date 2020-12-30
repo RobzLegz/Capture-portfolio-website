@@ -6,11 +6,17 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 import { About, Description, Image } from "../styles";
 import styled from 'styled-components';
-
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import {fade} from "../animation";
+import { useScroll } from "./useScroll";
 
 function ServicesSection() {
+
+    const [element,contrls] = useScroll();
+
     return (
-        <Services className="services">
+        <Services variants={fade} animate={contrls} initial="hidden" ref={element} className="services">
             <Description className="description">
                 <h2>High <span>quality</span> services</h2>
                 <Cards className="cards">
