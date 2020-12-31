@@ -6,6 +6,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 function OurWork() {
     return (
@@ -39,6 +40,7 @@ function OurWork() {
                     <img src={goodtimes} alt="goodtimes"/>
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     );
 };
@@ -49,6 +51,9 @@ const Work = styled(motion.div)`
     padding:5rem 10rem;
     h2{
         padding: 1rem 0rem;
+    }
+    @media(max-width:1300px){
+        padding:2rem 2rem;        
     }
 `;
 

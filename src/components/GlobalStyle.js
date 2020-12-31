@@ -51,6 +51,11 @@ const GlobalStyle = createGlobalStyle`
     a{
         font-size: 1.1rem;
     }
+    html{
+        @media(max-width:1700px){
+            font-size:75%;
+        }
+    }
 `;
 
 export default GlobalStyle;
