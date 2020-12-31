@@ -9,7 +9,7 @@ import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from 
 
 function OurWork() {
     return (
-        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background:"fff"}}>
+        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background:"#fff"}}>
             <motion.div variants={sliderContainer}>
                 <Frame1 variants={slider}></Frame1>
                 <Frame2 variants={slider}></Frame2>
@@ -27,7 +27,7 @@ function OurWork() {
             </Movie>
             <Movie>
                 <h2>The Racer</h2>
-                <div className="line"></div>
+                <div variants={photoAnim} className="line"></div>
                 <Link to="/work/the-racer">
                     <img src={theracer} alt="racer"/>
                 </Link>
@@ -47,7 +47,6 @@ const Work = styled(motion.div)`
     min-height:100vh;
     overflow:hidden;
     padding:5rem 10rem;
-    background: #fff;
     h2{
         padding: 1rem 0rem;
     }
